@@ -25,9 +25,18 @@ const ContactForm = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
           Ready to reclaim your time?
         </h2>
-        <p className="text-xl text-muted-foreground mb-12 font-light">
+        <p className="text-xl text-muted-foreground mb-6 font-light">
           Let's discuss how we can automate your workflow today.
         </p>
+        <a 
+          href="https://cal.com/elewachii/30min" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <Button className="mb-12 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-8 rounded-xl">
+            Book a Free Call <ArrowRight size={20} className="ml-2" />
+          </Button>
+        </a>
         <form
           onSubmit={handleSubmit}
           className="text-left glass p-8 md:p-10 rounded-3xl shadow-2xl"
