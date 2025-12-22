@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, ArrowRight, CheckCircle, Twitter, Linkedin } from 'lucide-react';
+import { Mail, ArrowRight, CheckCircle, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -88,14 +88,14 @@ const ContactForm = () => {
           </Button>
         </form>
         <div className="mt-16 flex justify-center gap-8 pb-10">
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="https://x.com/elewachii" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
             <Twitter size={24} />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="https://www.linkedin.com/in/elewachi-emmanuel/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-            <Mail size={24} />
+          <a href="https://wa.me/2347038212635" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <MessageCircle size={24} />
           </a>
         </div>
       </div>
