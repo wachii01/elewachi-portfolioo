@@ -33,7 +33,7 @@ const ContactForm = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <Button className="mb-12 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-8 rounded-xl">
+          <Button className="mb-12 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-8 rounded-xl animate-neon hover:scale-105 transition-transform duration-300">
             Book a Free Call <ArrowRight size={20} className="ml-2" />
           </Button>
         </a>
