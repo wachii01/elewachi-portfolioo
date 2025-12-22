@@ -1,27 +1,43 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import { useState, useEffect } from 'react';
+import HomePage from './pages/HomePage';
+import WorkPage from './pages/WorkPage';
+import CVPage from './pages/CVPage';
+import LetterPage from './pages/LetterPage';
+import ContactPage from './pages/ContactPage';
+import BottomDock from './components/navigation/BottomDock';
+import ChatWidget from './components/ChatWidget';
 
-const queryClient = new QueryClient();
+const App = () => {
+  const [activePage, setActivePage] = useState('home');
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activePage]);
+
+  const renderPage = () => {
+    switch (activePage) {
+      case 'home':
+        return <HomePage onNavigate={setActivePage} />;
+      case 'work':
+        return <WorkPage />;
+      case 'cv':
+        return <CVPage onNavigate={setActivePage} />;
+      case 'letter':
+        return <LetterPage onNavigate={setActivePage} />;
+      case 'contact':
+        return <ContactPage />;
+      default:
+        return <HomePage onNavigate={setActivePage} />;
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <main>{renderPage()}</main>
+      <BottomDock activePage={activePage} onNavigate={setActivePage} />
+      <ChatWidget />
+    </div>
+  );
+};
 
 export default App;
