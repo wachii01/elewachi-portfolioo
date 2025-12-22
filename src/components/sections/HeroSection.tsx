@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Star, Zap, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import profilePicture from '@/assets/profile-picture.jpg';
 
 const AnimatedHeroWord = () => {
   const [word, setWord] = useState('Build');
@@ -44,8 +45,22 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+        {/* Profile Picture */}
+        <div className="mb-6 relative">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl shadow-primary/20 ring-4 ring-background">
+            <img 
+              src={profilePicture} 
+              alt="Elewachi Emmanuel" 
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+          <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg">
+            <Zap className="w-5 h-5 text-primary-foreground fill-current" />
+          </div>
+        </div>
+
         {/* Badge */}
-        <div className="mb-8 animate-bounce-subtle">
+        <div className="mb-6 animate-bounce-subtle">
           <div className="inline-flex items-center space-x-2 glass rounded-full px-4 py-1.5">
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
             <span className="text-sm text-muted-foreground font-medium">AI Automation Expert</span>
@@ -61,7 +76,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
         {/* Subtitle */}
         <div className="max-w-xl mx-auto mb-10 space-y-2">
           <p className="text-muted-foreground text-lg flex items-center justify-center gap-2">
-            <span className="text-2xl">👋</span> Hi, I'm Elewachi Emmanuel.
+            <span className="text-2xl">👋</span> Hi, I'm <span className="text-foreground font-bold">Elewachi Emmanuel</span>.
           </p>
           <p className="text-muted-foreground leading-relaxed font-light text-lg">
             I help businesses save time, reduce costs, and eliminate repetitive work through smart workflow automation and AI integrations.
