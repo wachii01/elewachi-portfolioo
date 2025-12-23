@@ -13,11 +13,6 @@ const CVPage = ({ onNavigate }: CVPageProps) => {
     <section className="min-h-screen pt-20 pb-32 px-4 fade-in">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          {/* Profile Picture */}
-          <div className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-primary/30 shadow-2xl shadow-primary/20 overflow-hidden">
-            <img src={PROFILE_PIC} alt="Elewachi Emmanuel" className="w-full h-full object-cover" />
-          </div>
-
           <h2 className="text-4xl font-bold text-foreground mb-2">
             Curriculum <span className="font-accent text-primary font-normal">Vitae</span>
           </h2>
