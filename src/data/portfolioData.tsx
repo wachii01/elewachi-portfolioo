@@ -59,7 +59,8 @@ export const projectData: Project[] = [
     ],
     icon: <Bot className="text-accent" />,
     color: "from-accent/20 to-primary/5",
-    images: [aeWorkflowMain, aeClickupAgent, aeSlackAgent]
+    images: [aeWorkflowMain, aeClickupAgent, aeSlackAgent],
+    videoUrl: "https://player.vimeo.com/video/1089517153"
   },
   {
     title: "Inbound Call AI Agent",
