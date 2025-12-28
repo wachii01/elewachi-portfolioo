@@ -1,5 +1,5 @@
 import { useState, cloneElement, ReactElement } from 'react';
-import { ArrowRight, CheckCircle, ChevronDown, ChevronUp, BarChart2, Camera, Video, AlertCircle, Play } from 'lucide-react';
+import { ArrowRight, CheckCircle, ChevronDown, ChevronUp, BarChart2, Camera, Video, AlertCircle, Play, Wrench } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Project, projectData } from '@/data/portfolioData';
 
@@ -43,6 +43,16 @@ const ProjectCard = ({ project, isSimpleView = false, onNavigate }: ProjectCardP
                 </h4>
                 <p className="text-muted-foreground text-sm font-light leading-relaxed">
                   {project.problem}
+                </p>
+              </div>
+
+              {/* WHAT I DID */}
+              <div className="mb-6 bg-primary/10 rounded-xl p-4 border border-primary/20">
+                <h4 className="text-[10px] font-bold text-primary uppercase tracking-wider mb-2 flex items-center">
+                  <Wrench size={12} className="mr-2" /> What I Did
+                </h4>
+                <p className="text-muted-foreground text-sm font-light leading-relaxed">
+                  {project.solution}
                 </p>
               </div>
 
