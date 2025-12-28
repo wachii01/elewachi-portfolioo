@@ -1,5 +1,6 @@
 import { Mail, Phone, Bot, Video, ClipboardCheck, MessageCircle } from 'lucide-react';
 import { ReactNode } from 'react';
+import customerSupportWorkflow from '@/assets/customer-support-workflow.png';
 
 export interface Project {
   title: string;
@@ -10,6 +11,8 @@ export interface Project {
   stats: string[];
   icon: ReactNode;
   color: string;
+  image?: string;
+  videoUrl?: string;
 }
 
 export const projectData: Project[] = [
@@ -28,7 +31,9 @@ export const projectData: Project[] = [
     ],
     stats: ["60% faster response time", "90% accurate drafts", "Scaled support w/o hiring"],
     icon: <Mail className="text-primary" />,
-    color: "from-primary/20 to-accent/5"
+    color: "from-primary/20 to-accent/5",
+    image: customerSupportWorkflow,
+    videoUrl: "https://www.loom.com/embed/e91094cbe672454080a550570cc7de2d"
   },
   {
     title: "Custom AI Assistant (AE)",
