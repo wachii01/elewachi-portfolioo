@@ -18,7 +18,7 @@ export const projectData: Project[] = [
     category: "Ecommerce",
     description: "A smart system that reads incoming emails, classifies them as support-related, and drafts accurate replies using ChatGPT. It only notifies humans for complex issues. Built with Python and OpenAI API.",
     problem: "Customer support teams were drowning in repetitive inquiries, leading to slow response times, burnout, and missed sales opportunities during peak hours.",
-    solution: "Built an intelligent email classification system using Python and OpenAI API that automatically reads, categorizes, and drafts responses. Human agents only step in for complex edge cases.",
+    solution: "Triggered workflow via new emails using Gmail integration. Used GPT model to classify and evaluate the email (Customer Support or Not). Routed relevant messages to a support agent AI for drafting responses. Stored context and business docs in Pinecone via embeddings for memory. Sent draft reply to Gmail and notifications to Telegram. Non-support queries were sent separately via Telegram.",
     stats: ["60% faster response time", "90% accurate drafts", "Scaled support w/o hiring"],
     icon: <Mail className="text-primary" />,
     color: "from-primary/20 to-accent/5"
