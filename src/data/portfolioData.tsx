@@ -1,6 +1,9 @@
 import { Mail, Phone, Bot, Video, ClipboardCheck, MessageCircle } from 'lucide-react';
 import { ReactNode } from 'react';
 import customerSupportWorkflow from '@/assets/customer-support-workflow.png';
+import aeWorkflowMain from '@/assets/ae-workflow-main.png';
+import aeClickupAgent from '@/assets/ae-clickup-agent.png';
+import aeSlackAgent from '@/assets/ae-slack-agent.png';
 
 export interface Project {
   title: string;
@@ -12,6 +15,7 @@ export interface Project {
   icon: ReactNode;
   color: string;
   image?: string;
+  images?: string[];
   videoUrl?: string;
 }
 
@@ -41,13 +45,21 @@ export const projectData: Project[] = [
     description: "An AI assistant for Account Executives. It summarizes client emails, updates ClickUp automatically, and pushes key updates to the team via Slack. This reduced admin time by 70%.",
     problem: "Account Executives were spending 70% of their time on non-revenue generating admin tasks like CRM updates and email summaries instead of closing deals.",
     solution: [
-      "Created an AI-powered assistant that auto-summarizes client emails",
-      "Synced updates automatically to ClickUp",
-      "Pushed actionable insights to Slack for the team"
+      "Designed and deployed a custom AI assistant using n8n as the automation backbone",
+      "Integrated ClickUp, Slack, OpenAI, and calendar APIs to simulate AE responsibilities",
+      "Automated the full lifecycle of client email handling: summarizing, drafting replies, and updating tasks",
+      "Implemented Slack alerts and scheduling logic for team notifications and client meetings"
     ],
-    stats: ["70% drop in admin workload", "Faster client replies", "Team focused on strategy"],
+    stats: [
+      "70% reduction in administrative workload",
+      "Improved client response time & satisfaction",
+      "Eliminated delays in task updates and scheduling",
+      "Freed creative team to focus on strategy",
+      "Created replicable automation model"
+    ],
     icon: <Bot className="text-accent" />,
-    color: "from-accent/20 to-primary/5"
+    color: "from-accent/20 to-primary/5",
+    images: [aeWorkflowMain, aeClickupAgent, aeSlackAgent]
   },
   {
     title: "Inbound Call AI Agent",

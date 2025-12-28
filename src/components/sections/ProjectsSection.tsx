@@ -116,8 +116,20 @@ const ProjectCard = ({ project, isSimpleView = false, onNavigate }: ProjectCardP
               </ul>
             </div>
 
-            {/* PROJECT IMAGE */}
-            {project.image ? (
+            {/* PROJECT IMAGES */}
+            {project.images && project.images.length > 0 ? (
+              <div className="space-y-3">
+                {project.images.map((img, i) => (
+                  <div key={i} className="rounded-xl overflow-hidden border border-border">
+                    <img 
+                      src={img} 
+                      alt={`${project.title} workflow ${i + 1}`}
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : project.image ? (
               <div className="rounded-xl overflow-hidden border border-border">
                 <img 
                   src={project.image} 
