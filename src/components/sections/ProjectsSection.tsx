@@ -48,12 +48,17 @@ const ProjectCard = ({ project, isSimpleView = false, onNavigate }: ProjectCardP
 
               {/* WHAT I DID */}
               <div className="mb-6 bg-primary/10 rounded-xl p-4 border border-primary/20">
-                <h4 className="text-[10px] font-bold text-primary uppercase tracking-wider mb-2 flex items-center">
+                <h4 className="text-[10px] font-bold text-primary uppercase tracking-wider mb-3 flex items-center">
                   <Wrench size={12} className="mr-2" /> What I Did
                 </h4>
-                <p className="text-muted-foreground text-sm font-light leading-relaxed">
-                  {project.solution}
-                </p>
+                <ul className="space-y-2">
+                  {project.solution.map((item, i) => (
+                    <li key={i} className="flex items-start text-sm text-muted-foreground font-light">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 mr-3 shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* PROJECT IMAGE PLACEHOLDER */}
