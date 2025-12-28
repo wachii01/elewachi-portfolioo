@@ -15,7 +15,7 @@ const ProcessSection = () => (
             key={idx}
             className="group flex flex-col md:flex-row items-center md:items-start gap-6 bg-secondary border border-border p-8 rounded-3xl hover:border-primary/30 transition-colors duration-300"
           >
-            <div className="text-5xl font-bold text-muted/20 group-hover:text-primary/20 transition-colors duration-300 font-accent">
+            <div className="text-5xl font-bold text-primary/40 group-hover:text-primary/60 transition-colors duration-300 font-accent">
               {step.num}
             </div>
             <div className="text-center md:text-left">
