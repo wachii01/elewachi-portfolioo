@@ -116,13 +116,23 @@ const ProjectCard = ({ project, isSimpleView = false, onNavigate }: ProjectCardP
               </ul>
             </div>
 
-            {/* PROJECT IMAGE PLACEHOLDER */}
-            <div className="rounded-xl overflow-hidden border border-border bg-secondary/20 aspect-video flex items-center justify-center group/image">
-              <div className="text-center">
-                <Camera size={24} className="mx-auto text-muted-foreground mb-2 group-hover/image:text-primary transition-colors" />
-                <span className="text-xs text-muted-foreground group-hover/image:text-foreground transition-colors">Project Screenshot</span>
+            {/* PROJECT IMAGE */}
+            {project.image ? (
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={project.image} 
+                  alt={`${project.title} workflow`}
+                  className="w-full h-auto object-cover"
+                />
               </div>
-            </div>
+            ) : (
+              <div className="rounded-xl overflow-hidden border border-border bg-secondary/20 aspect-video flex items-center justify-center group/image">
+                <div className="text-center">
+                  <Camera size={24} className="mx-auto text-muted-foreground mb-2 group-hover/image:text-primary transition-colors" />
+                  <span className="text-xs text-muted-foreground group-hover/image:text-foreground transition-colors">Project Screenshot</span>
+                </div>
+              </div>
+            )}
 
             {/* KEY OUTCOMES */}
             <div className="bg-secondary/20 rounded-xl p-4 border border-border">
@@ -144,11 +154,23 @@ const ProjectCard = ({ project, isSimpleView = false, onNavigate }: ProjectCardP
               <h4 className="text-[10px] font-bold text-primary uppercase tracking-wider mb-2 flex items-center">
                 <Video size={12} className="mr-2" /> Watch Demo
               </h4>
-              <div className="rounded-xl overflow-hidden border border-border bg-secondary/40 aspect-video flex items-center justify-center group/video cursor-pointer hover:border-primary/30 transition-all">
-                <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center backdrop-blur-sm border border-border group-hover/video:scale-110 group-hover/video:bg-primary group-hover/video:border-transparent transition-all">
-                  <Play className="text-foreground ml-1" size={24} fill="currentColor" />
+              {project.videoUrl ? (
+                <div className="rounded-xl overflow-hidden border border-border aspect-video">
+                  <iframe
+                    src={project.videoUrl}
+                    frameBorder="0"
+                    allowFullScreen
+                    className="w-full h-full"
+                    title={`${project.title} demo video`}
+                  />
                 </div>
-              </div>
+              ) : (
+                <div className="rounded-xl overflow-hidden border border-border bg-secondary/40 aspect-video flex items-center justify-center group/video cursor-pointer hover:border-primary/30 transition-all">
+                  <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center backdrop-blur-sm border border-border group-hover/video:scale-110 group-hover/video:bg-primary group-hover/video:border-transparent transition-all">
+                    <Play className="text-foreground ml-1" size={24} fill="currentColor" />
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </DialogContent>
