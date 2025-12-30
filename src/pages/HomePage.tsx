@@ -2,6 +2,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import ProcessSection from '@/components/sections/ProcessSection';
 import ToolStackSection from '@/components/sections/ToolStackSection';
+import ReviewsSection from '@/components/sections/ReviewsSection';
 import AboutSection from '@/components/sections/AboutSection';
 import ContactForm from '@/components/sections/ContactForm';
 
@@ -16,6 +17,7 @@ const HomePage = ({ onNavigate }: HomePageProps) => {
       <ProjectsSection limit={3} isSimpleView={true} onNavigate={onNavigate} />
       <ProcessSection />
       <ToolStackSection />
+      <ReviewsSection />
       <AboutSection />
       <ContactForm />
     </div>
