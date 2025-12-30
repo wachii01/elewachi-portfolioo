@@ -1,16 +1,20 @@
+import softrLogo from '@/assets/softr-logo.png';
+import ghlLogo from '@/assets/ghl-logo.png';
+import makeLogo from '@/assets/make-logo.png';
+
 const tools = [
   { name: "n8n", logo: "https://n8n.io/favicon.ico" },
   { name: "Zapier", logo: "https://cdn.zapier.com/zapier/images/favicon.ico" },
-  { name: "Make.com", logo: "https://images.ctfassets.net/qqlj6g4ee76j/2EqJPwMNvkMUA88yuYmQ6s/b048c7ddf01d1fb65c8aacd20ed11621/Make_Favicon_2022.svg" },
+  { name: "Make.com", logo: makeLogo },
   { name: "Lovable", logo: "https://lovable.dev/favicon.ico" },
-  { name: "Softr", logo: "https://assets-global.website-files.com/5e8677b5c0bedd70c895f546/617c15fd03131b6edac5e59d_favicon-32x32.png" },
+  { name: "Softr", logo: softrLogo },
   { name: "Google Workspace", logo: "https://www.gstatic.com/images/branding/product/2x/hh_drive_96dp.png" },
   { name: "OpenAI", logo: "https://openai.com/favicon.ico" },
   { name: "Claude", logo: "https://claude.ai/favicon.ico" },
   { name: "Notion", logo: "https://www.notion.so/images/favicon.ico" },
   { name: "Airtable", logo: "https://airtable.com/favicon.ico" },
   { name: "HubSpot", logo: "https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png" },
-  { name: "GHL", logo: "https://images.leadconnectorhq.com/image/f_webp/q_100/r_1200/u_https://cdn.filesafe.space/location%2FknwMECHyzIh80markup%2FhighlevelFavicon.png" },
+  { name: "GHL", logo: ghlLogo },
 ];
 
 const ToolStackSection = () => {
