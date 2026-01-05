@@ -1,5 +1,22 @@
 import { PenTool, Search, Cpu } from 'lucide-react';
-import { skills } from '@/data/portfolioData';
+
+const detailedSkills = [
+  { title: "Workflow Automation Design (n8n / Zapier / Make)", description: "Designing end-to-end automations that replace manual business processes." },
+  { title: "AI Agent Development (LLMs + Tools)", description: "Building task-specific AI agents that reason, call tools, and take actions." },
+  { title: "API Integration & Webhooks", description: "Connecting CRMs, payment gateways, forms, and internal tools via APIs." },
+  { title: "AI-Powered Lead Qualification & Routing", description: "Automatically scoring, tagging, and assigning leads based on intent and data." },
+  { title: "CRM Automation (HubSpot, Airtable, Supabase, Google Sheets)", description: "Syncing data, updating records, and maintaining clean pipelines." },
+  { title: "Chatbot & Conversational AI Automation", description: "WhatsApp, Telegram, website, and Slack bots that respond intelligently." },
+  { title: "Document Processing & Data Extraction (OCR + AI)", description: "Extracting structured data from PDFs, invoices, receipts, and images." },
+  { title: "Email Automation & AI Email Handling", description: "Auto-reply, inbox triage, follow-ups, and personalized outreach." },
+  { title: "AI Content Repurposing Automation", description: "Turning one piece of content into threads, emails, posts, and scripts." },
+  { title: "Scheduling & Calendar Automation", description: "Auto-booking, reminders, rescheduling, and availability management." },
+  { title: "Database Design & Automation (Supabase / PostgreSQL)", description: "Structuring data and triggering workflows from database events." },
+  { title: "Error Handling, Logging & Monitoring", description: "Building reliable automations with retries, alerts, and fallbacks." },
+  { title: "Prompt Engineering for Business Workflows", description: "Designing prompts that produce consistent, structured, usable outputs." },
+  { title: "AI-Driven Data Enrichment", description: "Enhancing leads with company data, location, pricing, or intent signals." },
+  { title: "Security, Permissions & Compliance Automation", description: "Handling tokens, secrets, user consent, and safe data access." },
+];
 
 const AboutSection = () => {
   return (
@@ -68,14 +85,19 @@ const AboutSection = () => {
           <h2 className="text-3xl font-bold text-foreground mb-8">
             Elewachi's <span className="text-primary font-accent text-5xl ml-2 align-middle">Skills</span>
           </h2>
-          <div className="flex flex-wrap gap-3 content-start mb-12">
-            {skills.map((skill, idx) => (
-              <span
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {detailedSkills.map((skill, idx) => (
+              <div
                 key={idx}
-                className="px-4 py-2 rounded-lg bg-secondary border border-border text-muted-foreground text-sm hover:bg-muted hover:border-primary/50 hover:text-foreground transition-all duration-300 cursor-default font-light"
+                className="p-4 rounded-xl bg-secondary border border-border hover:border-primary/50 transition-all duration-300 group"
               >
-                {skill}
-              </span>
+                <h3 className="text-foreground font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
+                  {skill.title}
+                </h3>
+                <p className="text-muted-foreground text-xs font-light leading-relaxed">
+                  {skill.description}
+                </p>
+              </div>
             ))}
           </div>
         </div>
