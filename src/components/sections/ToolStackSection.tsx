@@ -29,23 +29,23 @@ const ToolStackSection = () => {
         </p>
         
         <div className="relative">
-          <div className="flex animate-marquee gap-8">
+          <div className="flex animate-marquee-fast gap-4 md:gap-8">
             {[...tools, ...tools].map((tool, index) => (
               <div
                 key={`${tool.name}-${index}`}
-                className="flex flex-col items-center gap-3 p-4 rounded-2xl bg-background/50 border border-border hover:border-primary/30 hover:bg-background transition-all duration-300 group flex-shrink-0 min-w-[120px]"
+                className="flex flex-col items-center gap-2 p-2 md:p-4 rounded-xl md:rounded-2xl bg-background/50 border border-border hover:border-primary/30 hover:bg-background transition-all duration-300 group flex-shrink-0 min-w-[80px] md:min-w-[120px]"
               >
-                <div className="w-12 h-12 flex items-center justify-center">
+                <div className="w-8 h-8 md:w-12 md:h-12 flex items-center justify-center">
                   <img
                     src={tool.logo}
                     alt={`${tool.name} logo`}
-                    className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
+                    className="w-6 h-6 md:w-10 md:h-10 object-contain group-hover:scale-110 transition-transform duration-300"
                     onError={(e) => {
                       e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=random&color=fff&size=40`;
                     }}
                   />
                 </div>
-                <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors text-center whitespace-nowrap">
+                <span className="text-xs md:text-sm text-muted-foreground group-hover:text-foreground transition-colors text-center whitespace-nowrap">
                   {tool.name}
                 </span>
               </div>
