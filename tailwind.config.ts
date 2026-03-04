@@ -49,15 +49,15 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Geologica', 'sans-serif'],
-        accent: ['Dancing Script', 'cursive'],
+        sans: ['"Inter"', 'sans-serif'],
+        accent: ['"Playfair Display"', 'serif'],
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-        "2xl": "1.5rem",
-        "3xl": "2rem",
+        lg: "16px",
+        md: "12px",
+        sm: "8px",
+        "2xl": "20px",
+        "3xl": "24px",
       },
       keyframes: {
         "accordion-down": {

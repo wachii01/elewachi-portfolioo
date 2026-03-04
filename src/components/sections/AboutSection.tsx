@@ -1,104 +1,75 @@
-import { PenTool, Search, Cpu } from 'lucide-react';
-
-const detailedSkills = [
-  { title: "Workflow Automation Design (n8n / Zapier / Make)", description: "Designing end-to-end automations that replace manual business processes." },
-  { title: "AI Agent Development (LLMs + Tools)", description: "Building task-specific AI agents that reason, call tools, and take actions." },
-  { title: "API Integration & Webhooks", description: "Connecting CRMs, payment gateways, forms, and internal tools via APIs." },
-  { title: "AI-Powered Lead Qualification & Routing", description: "Automatically scoring, tagging, and assigning leads based on intent and data." },
-  { title: "CRM Automation (HubSpot, Airtable, Supabase, Google Sheets)", description: "Syncing data, updating records, and maintaining clean pipelines." },
-  { title: "Chatbot & Conversational AI Automation", description: "WhatsApp, Telegram, website, and Slack bots that respond intelligently." },
-  { title: "Document Processing & Data Extraction (OCR + AI)", description: "Extracting structured data from PDFs, invoices, receipts, and images." },
-  { title: "Email Automation & AI Email Handling", description: "Auto-reply, inbox triage, follow-ups, and personalized outreach." },
-  { title: "AI Content Repurposing Automation", description: "Turning one piece of content into threads, emails, posts, and scripts." },
-  { title: "Scheduling & Calendar Automation", description: "Auto-booking, reminders, rescheduling, and availability management." },
-  { title: "Database Design & Automation (Supabase / PostgreSQL)", description: "Structuring data and triggering workflows from database events." },
-  { title: "Error Handling, Logging & Monitoring", description: "Building reliable automations with retries, alerts, and fallbacks." },
-  { title: "Prompt Engineering for Business Workflows", description: "Designing prompts that produce consistent, structured, usable outputs." },
-  { title: "AI-Driven Data Enrichment", description: "Enhancing leads with company data, location, pricing, or intent signals." },
-  { title: "Security, Permissions & Compliance Automation", description: "Handling tokens, secrets, user consent, and safe data access." },
-];
+import { CheckCircle2, Zap, Shield, Globe } from 'lucide-react';
 
 const AboutSection = () => {
+  const valueProps = [
+    {
+      icon: <Zap className="w-5 h-5 text-primary" />,
+      text: "I don't just automate tasks — I eliminate bottlenecks that are silently draining your revenue.",
+    },
+    {
+      icon: <Shield className="w-5 h-5 text-green-500" />,
+      text: "My Cybersecurity background means every system I build is secure, resilient, and production-ready.",
+    },
+    {
+      icon: <Globe className="w-5 h-5 text-blue-400" />,
+      text: "I've delivered for teams across the US, UK, and Africa — from lean startups to mid-size agencies.",
+    },
+  ];
+
+  const whoWeWorkWith = [
+    "Business owners drowning in manual processes they shouldn't be doing.",
+    "Founders scaling fast but losing deals to slow response times.",
+    "Agencies spending more on staff than on growth.",
+    "Teams who know AI is the future and want to be five steps ahead.",
+  ];
+
   return (
-    <section className="py-24 px-4 relative overflow-hidden bg-background">
-      <div className="max-w-4xl mx-auto flex flex-col gap-16">
-        {/* Journey */}
-        <div>
-          <h2 className="text-3xl font-bold text-foreground mb-8">
-            Elewachi's <span className="text-primary font-accent text-5xl ml-2 align-middle">Journey</span>
-          </h2>
-          <div className="space-y-4 relative">
-            <div className="absolute left-8 top-8 bottom-8 w-px bg-gradient-to-b from-accent/50 via-primary/50 to-green-900/50 md:block hidden"></div>
-
-            {/* Step 1 */}
-            <div className="bg-card border border-border p-6 rounded-2xl relative z-10">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center mr-4 border border-accent/20">
-                  <PenTool size={18} className="text-accent" />
-                </div>
-                <div>
-                  <h3 className="text-foreground font-bold">Where I Started</h3>
-                  <p className="text-[10px] text-accent font-mono uppercase tracking-wider">4 Years Ago</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground text-sm leading-relaxed font-light">
-                I began as a <span className="text-foreground font-medium">Direct Response Copywriter and Marketer</span>. This taught me the psychology of sales and the importance of customer communication.
-              </p>
+    <section className="py-32 px-6 md:px-12 bg-background" id="about">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          {/* Left column */}
+          <div>
+            <div className="mb-6">
+              <span className="text-muted-foreground text-sm tracking-widest uppercase">About</span>
             </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+              I don't just build<br />automations.<br />
+              <span className="text-primary italic">I replace chaos<br />with clockwork.</span>
+            </h2>
+            <div className="w-16 h-px bg-primary mb-8"></div>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              I'm Emmanuel — and I've spent 4+ years turning messy, manual business operations into intelligent systems that run themselves. While most people automate tasks, I architect <strong className="text-foreground">entire operational ecosystems</strong> that eliminate human bottlenecks and generate revenue around the clock.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              The result? My clients save 15–20 hours per week, cut costs by 40%, and close more deals — all on autopilot. No extra hires. No extra overhead. Just systems that execute relentlessly.
+            </p>
 
-            {/* Step 2 */}
-            <div className="bg-card border border-border p-6 rounded-2xl relative z-10">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-4 border border-primary/20">
-                  <Search size={18} className="text-primary" />
+            {/* Value props */}
+            <div className="space-y-4">
+              {valueProps.map((prop, idx) => (
+                <div key={idx} className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-secondary border border-border flex items-center justify-center flex-shrink-0 mt-0.5">
+                    {prop.icon}
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{prop.text}</p>
                 </div>
-                <div>
-                  <h3 className="text-foreground font-bold">The Pivot</h3>
-                  <p className="text-[10px] text-primary font-mono uppercase tracking-wider">The Realization</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground text-sm leading-relaxed font-light">
-                I realized great copy fails if operations are messy. I fell in love with logic and building systems that "just work" without human error.
-              </p>
-            </div>
-
-            {/* Step 3 */}
-            <div className="bg-card border border-border p-6 rounded-2xl relative z-10">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 rounded-full bg-green-900/30 flex items-center justify-center mr-4 border border-green-500/20">
-                  <Cpu size={18} className="text-green-400" />
-                </div>
-                <div>
-                  <h3 className="text-foreground font-bold">Where I Am Now</h3>
-                  <p className="text-[10px] text-green-400 font-mono uppercase tracking-wider">Present Day</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground text-sm leading-relaxed font-light">
-                Now, I engineer scalable AI systems for agencies. I combine marketing insight with technical expertise to build automations that drive revenue.
-              </p>
+              ))}
             </div>
           </div>
-        </div>
 
-        {/* Skills */}
-        <div>
-          <h2 className="text-3xl font-bold text-foreground mb-8">
-            Elewachi's <span className="text-primary font-accent text-5xl ml-2 align-middle">Skills</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {detailedSkills.map((skill, idx) => (
-              <div
-                key={idx}
-                className="p-4 rounded-xl bg-secondary border border-border hover:border-primary/50 transition-all duration-300 group"
-              >
-                <h3 className="text-foreground font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
-                  {skill.title}
-                </h3>
-                <p className="text-muted-foreground text-xs font-light leading-relaxed">
-                  {skill.description}
-                </p>
-              </div>
-            ))}
+          {/* Right column — checklist */}
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-10">
+              Built For
+            </h3>
+            <div className="border-l border-border pl-8 space-y-8">
+              {whoWeWorkWith.map((item, idx) => (
+                <div key={idx} className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 text-green-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-foreground text-lg leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
