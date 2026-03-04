@@ -18,79 +18,79 @@ export const projectData: Project[] = [
   {
     title: "Customer Support AI Chatbot",
     category: "Customer Support",
-    description: "NLP chatbot handling 800+ monthly inquiries with context-aware responses.",
+    description: "Built intelligent chatbot handling 800+ monthly customer inquiries with natural language understanding and context-aware responses.",
     solution: [
-      "Integrated OpenAI for context generation",
-      "Automated FAQ handling and routing",
-      "Deployed via web widget and messaging platforms"
+      "Integrated natural language understanding",
+      "Delivered context-aware responses",
+      "Automated customer inquiry handling"
     ],
-    stats: ["85% resolution rate", "800+ monthly inquiries handled", "Instant 24/7 support"],
+    stats: ["800+ monthly inquiries", "Intelligent routing"],
     icon: <Bot className="text-primary" />,
     color: "from-primary/20: to-background"
   },
   {
     title: "AI Video Clipping System",
     category: "Content Automation",
-    description: "Converts long-form video into optimized shorts for YouTube, TikTok & Instagram.",
+    description: "Developed automated system converting long-form videos into optimized shorts for YouTube Short, TikTok, and Instagram, processing 10+ videos weekly.",
     solution: [
-      "Analyzes long-form video content using AI",
-      "Automatically extracts viral-worthy clips",
-      "Exports formatted shorts without manual editing"
+      "Processed long-form videos automatically",
+      "Optimized clips for multiple platforms",
+      "Streamlined short-form content creation"
     ],
-    stats: ["10+ videos/week automated", "Zero manual editing", "Cross-platform ready"],
+    stats: ["10+ videos processed weekly", "Multi-platform export"],
     icon: <Video className="text-primary" />,
     color: "from-primary/20: to-background"
   },
   {
     title: "HR Job Evaluation System",
     category: "Operations",
-    description: "AI-powered resume screening & candidate scoring workflow.",
+    description: "Created AI-powered workflow for automated resume screening and candidate evaluation, reducing hiring team workload by 18 hours per week.",
     solution: [
-      "Reads incoming resumes and extracts data",
-      "Scores applicants against job requirements",
-      "Surfaces top candidates automatically"
+      "Automated resume screening workflow",
+      "Implemented candidate evaluation scoring",
+      "AI-powered candidate analysis"
     ],
-    stats: ["Saved 18 hrs/week", "Eliminated bias", "Instant applicant scoring"],
+    stats: ["Reduced workload by 18 hrs/wk", "Automated screening"],
     icon: <ClipboardCheck className="text-primary" />,
-    color: "from-primary/20: to-background"
-  },
-  {
-    title: "WhatsApp Booking Bot (Spa)",
-    category: "Booking",
-    description: "Intelligent booking + reminders via WhatsApp Business API.",
-    solution: [
-      "Connected WhatsApp Business API to calendar",
-      "Automated appointment scheduling conversational flow",
-      "Triggered pre-appointment reminders"
-    ],
-    stats: ["35% fewer no-shows", "24/7 self-service booking", "Improved customer experience"],
-    icon: <MessageCircle className="text-primary" />,
     color: "from-primary/20: to-background"
   },
   {
     title: "Content Generation System",
     category: "Marketing",
-    description: "Auto-generates blog posts, social copy & marketing content from brand guidelines.",
+    description: "Built AI content automation generating blog posts, social media content, and marketing copy based on brand guidelines and SEO parameters.",
     solution: [
-      "Stored brand voice guidelines in vector database",
-      "Generated structured multi-platform content",
-      "Drafted directly into CMS for review"
+      "Generated blog posts & social content",
+      "Applied brand guidelines formatting",
+      "Integrated SEO parameters automatically"
     ],
-    stats: ["Scalable content", "Zero extra headcount", "Maintained brand consistency"],
+    stats: ["Consistent brand voice", "SEO-optimized copy"],
     icon: <Bot className="text-primary" />,
     color: "from-primary/20: to-background"
   },
   {
-    title: "Email Management Automation",
-    category: "Administration",
-    description: "Categorizes & routes 1,000+ weekly emails with 90% accuracy.",
+    title: "UGC Video Generation Platform",
+    category: "Content Automation",
+    description: "Developed automated system for user-generated content processing and quality control, handling 200+ submissions monthly.",
     solution: [
-      "Read incoming emails directly from inbox",
-      "Categorized by intent and urgency using LLM",
-      "Routed to correct department or auto-drafted reply"
+      "Processed user-generated content",
+      "Automated quality control checks",
+      "Managed large-scale media submissions"
     ],
-    stats: ["From chaos to zero inbox", "1,000+ weekly emails", "90% categorization accuracy"],
-    icon: <Mail className="text-primary" />,
+    stats: ["200+ submissions monthly", "Automated QC"],
+    icon: <Video className="text-primary" />,
+    color: "from-primary/20: to-background"
+  },
+  {
+    title: "WhatsApp Chatbot for Spa & Massage",
+    category: "Booking",
+    description: "Implemented intelligent booking system via WhatsApp Business API with automated appointment reminders and customer service responses.",
+    solution: [
+      "Integrated WhatsApp Business API",
+      "Automated appointment reminders",
+      "Handled customer service responses"
+    ],
+    stats: ["Intelligent booking", "Automated reminders"],
+    icon: <MessageCircle className="text-primary" />,
     color: "from-primary/20: to-background"
   }
 ];
@@ -133,7 +133,7 @@ export const skills = [
 
 export const technicalSkills = {
   automation: ['n8n', 'Make.com', 'Zapier', 'Webhooks', 'REST APIs'],
-  ai: ['OpenAI', 'Claude', 'Gemini', 'Prompt Engineering', 'Lovable'],
+  ai: ['OpenAI', 'Claude', 'Gemini', 'Prompt Engineering'],
   crm: ['GoHighLevel', 'HubSpot', 'Klaviyo', 'Manychat'],
   database: ['Airtable', 'Supabase', 'PostgreSQL', 'Google Sheets', 'Notion'],
   comms: ['WhatsApp Business API', 'Slack', 'Google Workspace', 'Meta Ads Manager']

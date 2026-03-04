@@ -14,7 +14,7 @@ const HomePage = ({ onNavigate }: HomePageProps) => {
   return (
     <div className="fade-in">
       <HeroSection onNavigate={onNavigate} />
-      <ProjectsSection limit={3} isSimpleView={true} onNavigate={onNavigate} />
+      <ProjectsSection isSimpleView={true} />
       <ProcessSection />
       <ToolStackSection />
       <ReviewsSection />

@@ -29,7 +29,7 @@ const journeyMilestones = [
 
 const JourneySection = () => {
     return (
-        <section className="py-32 px-6 md:px-12 bg-background" id="journey">
+        <section className="py-16 px-6 md:px-12 bg-background" id="journey">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16">
                     Elewachi's <span className="font-accent text-primary italic">Journey</span>

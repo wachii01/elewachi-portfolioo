@@ -44,7 +44,7 @@ const categoryLabels: Record<string, string> = {
 
 const ToolStackSection = () => {
   return (
-    <section className="py-32 px-6 md:px-12 bg-background" id="tools">
+    <section className="py-16 px-6 md:px-12 bg-background" id="tools">
       <div className="max-w-6xl mx-auto">
         <div className="mb-6">
           <span className="text-muted-foreground text-sm tracking-widest uppercase">Tech Stack</span>

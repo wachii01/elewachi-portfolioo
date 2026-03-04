@@ -57,7 +57,7 @@ const experiences = [
 
 const CVSection = () => {
     return (
-        <section className="py-32 px-6 md:px-12 bg-background" id="cv">
+        <section className="py-16 px-6 md:px-12 bg-background" id="cv">
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
@@ -92,8 +92,8 @@ const CVSection = () => {
                                     {/* Timeline node */}
                                     <div className="hidden md:flex flex-col items-center flex-shrink-0 w-16">
                                         <div className={`relative z-10 w-10 h-10 rounded-full border-4 border-background flex items-center justify-center ${exp.isCurrent
-                                                ? 'bg-primary shadow-lg shadow-primary/30'
-                                                : 'bg-card border-border'
+                                            ? 'bg-primary shadow-lg shadow-primary/30'
+                                            : 'bg-card border-border'
                                             }`}>
                                             <span className={`text-xs font-bold ${exp.isCurrent ? 'text-primary-foreground' : 'text-muted-foreground'}`}>
                                                 {String(idx + 1).padStart(2, '0')}

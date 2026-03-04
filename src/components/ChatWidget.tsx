@@ -38,7 +38,7 @@ const ChatWidget = () => {
     setInput('');
     setIsLoading(true);
 
-    // Simulate AI response (would integrate with Lovable AI in production)
+    // Simulate AI response
     setTimeout(() => {
       const responses = [
         `Based on Elewachi's experience, he specializes in ${input.toLowerCase().includes('automation') ? 'building intelligent automation workflows using n8n, Make.com, and custom integrations.' : 'AI-powered solutions that save businesses 15-20 hours weekly.'}`,
@@ -80,11 +80,10 @@ const ChatWidget = () => {
             {messages.map((msg, idx) => (
               <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
-                    msg.role === 'user'
+                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${msg.role === 'user'
                       ? 'bg-primary text-primary-foreground rounded-br-none'
                       : 'bg-secondary text-foreground rounded-bl-none border border-border'
-                  }`}
+                    }`}
                 >
                   {msg.text}
                 </div>

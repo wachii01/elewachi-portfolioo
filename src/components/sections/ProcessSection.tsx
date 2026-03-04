@@ -2,7 +2,7 @@ import { processSteps } from '@/data/portfolioData';
 
 const ProcessSection = () => {
   return (
-    <section className="py-32 px-6 md:px-12 bg-background" id="process">
+    <section className="py-16 px-6 md:px-12 bg-background" id="process">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="mb-6">
@@ -16,23 +16,21 @@ const ProcessSection = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           <div className="relative p-8 md:p-10">
             {/* L-bracket corners */}
-            <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-border"></div>
-            <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-border"></div>
+            <span className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-primary/50" />
+            <span className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-primary/50" />
+            <span className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-primary/50" />
+            <span className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-primary/50" />
             <p className="text-foreground text-lg leading-relaxed">
-              Missed follow-ups, slow replies, half-hearted execution—you're paying salaries for inefficiency.
-            </p>
-            <p className="text-muted-foreground text-sm mt-4">
-              AI doesn't slack off, call in sick, or burn out. It just executes.
+              Missed follow-ups, slow replies, and inconsistent execution aren't effort problems — they're system problems. You're paying human salaries to do work that was never meant for humans in the first place.
             </p>
           </div>
           <div className="relative p-8 md:p-10">
-            <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-border"></div>
-            <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-border"></div>
+            <span className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-primary/50" />
+            <span className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-primary/50" />
+            <span className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-primary/50" />
+            <span className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-primary/50" />
             <p className="text-foreground text-lg leading-relaxed">
-              Every unreturned call, late response, and forgotten follow-up costs you revenue.
-            </p>
-            <p className="text-muted-foreground text-sm mt-4">
-              My AI systems respond instantly, relentlessly, and correctly every time.
+              Every unreturned call, delayed response, and dropped lead is revenue you already earned — just never collected. My AI systems close those gaps instantly, consistently, and at any volume your business throws at them.
             </p>
           </div>
         </div>

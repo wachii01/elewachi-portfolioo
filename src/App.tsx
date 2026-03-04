@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import HeroSection from './components/sections/HeroSection';
 import ProjectsSection from './components/sections/ProjectsSection';
 import ProcessSection from './components/sections/ProcessSection';
-import ToolStackSection from './components/sections/ToolStackSection';
 import SkillsSection from './components/sections/SkillsSection';
+import ToolsGridSection from './components/sections/ToolsGridSection';
 import JourneySection from './components/sections/JourneySection';
 import ReviewsSection from './components/sections/ReviewsSection';
 import AboutSection from './components/sections/AboutSection';
@@ -24,11 +24,11 @@ const App = () => {
   const HomeView = () => (
     <>
       <HeroSection />
-      <ProjectsSection limit={3} isSimpleView={true} />
+      <ProjectsSection limit={4} isSimpleView={true} />
       <ReviewsSection />
       <ProcessSection />
-      <ToolStackSection />
       <SkillsSection />
+      <ToolsGridSection />
       <JourneySection />
       <AboutSection />
       <ContactForm />
@@ -39,13 +39,18 @@ const App = () => {
     <div className="min-h-screen bg-background text-foreground relative">
       <main>
         {activePage === 'home' && <HomeView />}
-        {activePage === 'works' && (
-          <div className="pt-20">
+        {activePage === 'projects' && (
+          <div className="pt-20 pb-32">
+            <div className="text-center mb-10 px-6">
+              <h1 className="text-5xl font-bold text-foreground">
+                Full <span className="font-accent text-primary">Portfolio</span>
+              </h1>
+            </div>
             <ProjectsSection />
           </div>
         )}
         {activePage === 'letter' && (
-          <div className="pt-20 min-h-screen flex items-center">
+          <div className="pt-24 pb-28">
             <LetterSection />
           </div>
         )}
@@ -55,7 +60,7 @@ const App = () => {
           </div>
         )}
         {activePage === 'contact' && (
-          <div className="pt-20 min-h-screen flex items-center">
+          <div className="pt-24 pb-28">
             <ContactForm />
           </div>
         )}

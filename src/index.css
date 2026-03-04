@@ -63,7 +63,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 1.7;
     font-weight: 400;
   }
