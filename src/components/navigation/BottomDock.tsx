@@ -19,8 +19,11 @@ const BottomDock = ({ activePage, onNavigate }: BottomDockProps) => {
       <nav className="pointer-events-auto flex items-center gap-1 bg-card/90 backdrop-blur-xl border border-border rounded-full px-2 py-2 shadow-2xl">
         {/* Profile + Home */}
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="flex items-center gap-2 bg-[#4101F6] hover:bg-[#3600cc] text-white rounded-full pl-1.5 pr-4 py-1.5 transition-all duration-300 hover:scale-105"
+          onClick={() => onNavigate('home')}
+          className={`flex items-center gap-2 rounded-full pl-1.5 pr-4 py-1.5 transition-all duration-300 hover:scale-105 ${activePage === 'home'
+            ? 'bg-[#4101F6] text-white'
+            : 'bg-secondary text-muted-foreground hover:bg-secondary/80 hover:text-foreground'
+            }`}
         >
           <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white/20">
             <img
@@ -40,7 +43,10 @@ const BottomDock = ({ activePage, onNavigate }: BottomDockProps) => {
           <button
             key={item.id}
             onClick={() => onNavigate(item.id)}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300 text-xs font-medium"
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-full transition-all duration-300 text-xs font-medium ${activePage === item.id
+                ? 'bg-primary text-primary-foreground'
+                : 'text-muted-foreground hover:text-foreground hover:bg-secondary'
+              }`}
           >
             {item.icon}
             <span className="hidden sm:inline">{item.label}</span>

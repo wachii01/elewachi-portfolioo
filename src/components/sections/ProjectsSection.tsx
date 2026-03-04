@@ -7,8 +7,13 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-const ProjectsSection = () => {
-  const projects = projectData;
+interface ProjectsSectionProps {
+  limit?: number;
+  isSimpleView?: boolean;
+}
+
+const ProjectsSection = ({ limit, isSimpleView }: ProjectsSectionProps) => {
+  const projects = limit ? projectData.slice(0, limit) : projectData;
 
   return (
     <section className="py-32 px-6 md:px-12 bg-background" id="projects">
