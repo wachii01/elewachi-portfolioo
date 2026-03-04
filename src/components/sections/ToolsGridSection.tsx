@@ -1,13 +1,10 @@
 const tools = [
     // Row 1
-    { name: 'React', logo: 'https://cdn.simpleicons.org/react/61DAFB' },
     { name: 'TypeScript', logo: 'https://cdn.simpleicons.org/typescript/3178C6' },
-    { name: 'Node.js', logo: 'https://cdn.simpleicons.org/nodedotjs/5FA04E' },
     { name: 'n8n', logo: 'https://cdn.simpleicons.org/n8n/EA4B71' },
-    { name: 'Vite', logo: 'https://cdn.simpleicons.org/vite/646CFF' },
     // Row 2
     { name: 'Vercel', logo: 'https://cdn.simpleicons.org/vercel/ffffff' },
-    { name: 'OpenAI', logo: 'https://cdn.simpleicons.org/openai/ffffff' },
+    { name: 'OpenAI', logo: 'https://cdn.simpleicons.org/openai/74AA9C' },
     { name: 'Supabase', logo: 'https://cdn.simpleicons.org/supabase/3FCF8E' },
     { name: 'Make.com', logo: 'https://cdn.simpleicons.org/make/6D00CC' },
     { name: 'AWS', logo: 'https://cdn.simpleicons.org/amazonaws/FF9900' },
@@ -27,12 +24,14 @@ const tools = [
     { name: 'Facebook', logo: 'https://cdn.simpleicons.org/facebook/0866FF' },
     { name: 'Slack', logo: 'https://cdn.simpleicons.org/slack/4A154B' },
     { name: 'HubSpot', logo: 'https://cdn.simpleicons.org/hubspot/FF7A59' },
-    { name: 'Figma', logo: 'https://cdn.simpleicons.org/figma/F24E1E' },
-    { name: 'Microsoft', logo: 'https://cdn.simpleicons.org/microsoft/ffffff' },
+    { name: 'Python', logo: 'https://cdn.simpleicons.org/python/3776AB' },
+    { name: 'Microsoft', logo: 'https://cdn.simpleicons.org/windows/0078D4' },
     // Row 6 - User's key tools
     { name: 'Softr', logo: 'https://avatars.githubusercontent.com/u/61489953?s=200&v=4' },
     { name: 'GoHighLevel', logo: 'https://cdn.brandfetch.io/idh2fv7OKQ/theme/dark/symbol.svg?k=bfHSJFAPEG' },
     { name: 'Antigravity', logo: 'https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg' },
+    { name: 'Claude AI', logo: 'https://cdn.simpleicons.org/anthropic/ffffff' },
+    { name: 'Redis', logo: 'https://cdn.simpleicons.org/redis/FF4438' },
 ];
 
 const ToolsGridSection = () => {
@@ -43,7 +42,7 @@ const ToolsGridSection = () => {
                     Tech Stack & Integrations
                 </h2>
 
-                <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 gap-5 md:gap-6">
+                <div className="grid grid-cols-6 gap-3 md:gap-6">
                     {tools.map((tool, i) => (
                         <div key={i} className="flex flex-col items-center gap-2 group">
                             {/* Card with L-corners */}
