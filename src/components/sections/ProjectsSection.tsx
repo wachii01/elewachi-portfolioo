@@ -16,7 +16,7 @@ const ProjectsSection = ({ limit, isSimpleView }: ProjectsSectionProps) => {
   const projects = limit ? projectData.slice(0, limit) : projectData;
 
   return (
-    <section className="py-32 px-6 md:px-12 bg-background" id="projects">
+    <section className={`px-6 md:px-12 bg-background ${isSimpleView ? 'pb-20 pt-10' : 'py-32'}`} id="projects">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="mb-6">

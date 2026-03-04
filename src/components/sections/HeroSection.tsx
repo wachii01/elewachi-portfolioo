@@ -32,7 +32,7 @@ const AnimatedHeroWord = () => {
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-12 pt-32 pb-20 overflow-hidden bg-background">
+    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-12 pt-32 pb-10 overflow-hidden bg-background">
       {/* Subtle radial glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60rem] h-[60rem] bg-primary/[0.03] rounded-full blur-[120px] pointer-events-none"></div>
 

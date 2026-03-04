@@ -37,17 +37,9 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground relative">
-      {/* Blue edge vignette glow */}
-      <div className="fixed inset-0 z-[60] pointer-events-none" aria-hidden="true">
-        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-blue-600/[0.07] to-transparent"></div>
-        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-blue-600/[0.07] to-transparent"></div>
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-blue-600/[0.05] to-transparent"></div>
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-blue-600/[0.05] to-transparent"></div>
-      </div>
-
       <main>
         {activePage === 'home' && <HomeView />}
-        {activePage === 'projects' && (
+        {activePage === 'works' && (
           <div className="pt-20">
             <ProjectsSection />
           </div>
