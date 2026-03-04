@@ -32,10 +32,7 @@ const AnimatedHeroWord = () => {
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-12 pt-32 pb-10 overflow-hidden bg-background">
-      {/* Subtle radial glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60rem] h-[60rem] bg-primary/[0.03] rounded-full blur-[120px] pointer-events-none"></div>
-
+    <section className="relative flex flex-col justify-center items-center text-center px-6 md:px-12 pt-32 pb-0 overflow-hidden bg-background">
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
         {/* Profile picture — small, centered */}
         <div className="mb-10 relative">
@@ -58,7 +55,7 @@ const HeroSection = () => {
         {/* Subtitle */}
         <div className="max-w-2xl mx-auto mb-6">
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed italic">
-            79% of your buyers will ditch your business if you ghost their message for even 15mins, and switch straight to your competitor.
+            You can't scale a business that still runs on manual follow-ups, disconnected tools, and processes that break the moment your team gets busy.
           </p>
         </div>
 
