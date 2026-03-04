@@ -12,6 +12,7 @@ import CVSection from './components/sections/CVSection';
 import ContactForm from './components/sections/ContactForm';
 import BottomDock from './components/navigation/BottomDock';
 import ChatWidget from './components/ChatWidget';
+import FloatingParticles from './components/FloatingParticles';
 
 const App = () => {
   const [activePage, setActivePage] = useState('home');
@@ -37,7 +38,8 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground relative">
-      <main>
+      <FloatingParticles />
+      <main className="relative z-10">
         {activePage === 'home' && <HomeView />}
         {activePage === 'projects' && (
           <div className="pt-20 pb-32">
