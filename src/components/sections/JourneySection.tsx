@@ -40,10 +40,10 @@ const JourneySection = () => {
                     {journeyMilestones.map((milestone, idx) => (
                         <div key={idx} className="relative">
                             {/* Card */}
-                            <div className="relative bg-card border border-border rounded-2xl p-8 mb-4 group hover:border-border/80 transition-all duration-300">
+                            <div className="relative bg-card border border-border p-8 mb-4 group hover:border-border/80 transition-all duration-300">
                                 {/* Header row */}
                                 <div className="flex items-center gap-4 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-secondary border border-border flex items-center justify-center flex-shrink-0">
+                                    <div className="w-10 h-10 bg-secondary border border-border flex items-center justify-center flex-shrink-0">
                                         {milestone.icon}
                                     </div>
                                     <div>

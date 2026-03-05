@@ -9,7 +9,7 @@ const ProcessSection = () => {
           <span className="text-muted-foreground text-sm tracking-widest uppercase">Why you need this</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16">
-          Your Business Could Be Scaling<br />Faster. Here's What's Stopping You.
+          Your Business Could Be Scaling Faster.<br />Here's What's Stopping You.
         </h2>
 
         {/* L-bracket cards */}

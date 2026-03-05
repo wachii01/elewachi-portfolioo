@@ -37,7 +37,7 @@ const App = () => {
   );
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative">
+    <div className="min-h-screen text-foreground relative">
       <FloatingParticles />
       <main className="relative z-10">
         {activePage === 'home' && <HomeView />}

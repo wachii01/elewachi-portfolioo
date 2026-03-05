@@ -36,7 +36,7 @@ const ReviewsSection = () => {
 
         {/* Video review */}
         <div className="max-w-3xl mx-auto">
-          <div className="rounded-lg overflow-hidden border border-border shadow-xl">
+          <div className="overflow-hidden border border-border shadow-xl">
             <video
               src={thailandReview}
               controls

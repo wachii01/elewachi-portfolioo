@@ -69,7 +69,7 @@ const ContactForm = () => {
                     type="text"
                     required
                     placeholder="John Doe"
-                    className="bg-secondary/50 border-border focus:border-primary/50 rounded-lg"
+                    className="bg-secondary/50 border-border focus:border-primary/50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -78,7 +78,7 @@ const ContactForm = () => {
                     type="email"
                     required
                     placeholder="john@company.com"
-                    className="bg-secondary/50 border-border focus:border-primary/50 rounded-lg"
+                    className="bg-secondary/50 border-border focus:border-primary/50"
                   />
                 </div>
               </div>
@@ -93,7 +93,7 @@ const ContactForm = () => {
               </div>
               <Button
                 disabled={status !== 'idle'}
-                className="w-full h-12 bg-foreground text-background hover:bg-foreground/90 font-semibold rounded-lg transition-colors"
+                className="w-full h-12 bg-foreground text-background hover:bg-foreground/90 font-semibold transition-colors"
               >
                 {status === 'idle' && (
                   <>

@@ -37,7 +37,7 @@
     --input: 0 0% 12%;
     --ring: 18 100% 50%;
 
-    --radius: 12px;
+    --radius: 0px;
 
     /* Custom tokens */
     --gradient-primary: linear-gradient(135deg, #FF4D00, #CC3D00);
@@ -63,7 +63,7 @@
 
   body {
     @apply text-foreground antialiased;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Inter', sans-serif;
     line-height: 1.7;
     font-weight: 400;
     background-color: #0a0a0a;

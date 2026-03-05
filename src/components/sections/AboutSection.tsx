@@ -48,7 +48,7 @@ const AboutSection = () => {
             <div className="space-y-4">
               {valueProps.map((prop, idx) => (
                 <div key={idx} className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-secondary border border-border flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-10 h-10 bg-secondary border border-border flex items-center justify-center flex-shrink-0 mt-0.5">
                     {prop.icon}
                   </div>
                   <p className="text-muted-foreground text-sm leading-relaxed">{prop.text}</p>
