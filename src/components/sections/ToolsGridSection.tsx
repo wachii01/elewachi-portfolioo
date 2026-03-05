@@ -32,6 +32,9 @@ const tools = [
     { name: 'Antigravity', logo: 'https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg' },
     { name: 'Claude AI', logo: 'https://cdn.simpleicons.org/anthropic/ffffff' },
     { name: 'Redis', logo: 'https://cdn.simpleicons.org/redis/FF4438' },
+    { name: 'ElevenLabs', logo: 'https://cdn.simpleicons.org/elevenlabs/ffffff' },
+    { name: 'Retell.ai', logo: 'https://cdn.brandfetch.io/id_KsyK7J9/theme/dark/symbol.svg' },
+    { name: 'Apify', logo: 'https://cdn.simpleicons.org/apify/97D700' },
 ];
 
 const ToolsGridSection = () => {
