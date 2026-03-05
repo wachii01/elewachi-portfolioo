@@ -37,9 +37,13 @@ const App = () => {
   );
 
   return (
-    <div className="min-h-screen text-foreground relative">
+    <div className="min-h-screen text-foreground relative overflow-hidden">
+      {/* Animated Grid Layer */}
+      <div className="fixed inset-0 bg-custom-grid z-0" />
+      {/* Dark Edge Fade Layer */}
+      <div className="fixed inset-0 vignette-overlay pointer-events-none z-10" />
       <FloatingParticles />
-      <main className="relative z-10">
+      <main className="relative z-20">
         {activePage === 'home' && <HomeView />}
         {activePage === 'projects' && (
           <div className="pt-20 pb-32">
