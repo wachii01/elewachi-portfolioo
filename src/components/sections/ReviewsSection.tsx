@@ -8,7 +8,7 @@ const ReviewsSection = () => {
         <div className="mb-6">
           <span className="text-muted-foreground text-sm tracking-widest uppercase">Testimonials</span>
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-16">
           What Clients Say
         </h2>
 
@@ -17,11 +17,8 @@ const ReviewsSection = () => {
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
-              className="relative p-8 md:p-10"
+              className="relative p-8 md:p-10 border border-primary/50 bg-[#1a1a1a]"
             >
-              {/* L-bracket corners */}
-              <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-border"></div>
-              <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-border"></div>
 
               <p className="text-foreground text-lg leading-relaxed mb-8 italic">
                 "{testimonial.quote}"

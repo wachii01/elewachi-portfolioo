@@ -45,7 +45,7 @@ const HeroSection = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="font-['Syne'] text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1] mb-8 fade-in-up delay-100">
+        <h1 className="font-['Syne'] text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight leading-[1.1] mb-8 fade-in-up delay-100">
           I <AnimatedHeroWord /> AI systems that
           generate<br className="hidden md:block" />
           more revenue while replacing the<br className="hidden md:block" />

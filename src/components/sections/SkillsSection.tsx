@@ -76,7 +76,7 @@ const SkillsSection = () => {
                 <div className="mb-6">
                     <span className="text-muted-foreground text-sm tracking-widest uppercase">Expertise</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-16">
                     What I Bring to<br />the Table
                 </h2>
 

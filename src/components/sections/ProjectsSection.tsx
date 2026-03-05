@@ -22,7 +22,7 @@ const ProjectsSection = ({ limit, isSimpleView }: ProjectsSectionProps) => {
         <div className="mb-6">
           <span className="text-muted-foreground text-sm tracking-widest uppercase">Use Cases</span>
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-16">
           What My AI Agents &<br />Automations Can Do
         </h2>
 

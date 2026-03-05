@@ -32,7 +32,7 @@ const AboutSection = () => {
             <div className="mb-6">
               <span className="text-muted-foreground text-sm tracking-widest uppercase">About</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
               I don't just build<br />automations.<br />
               <span className="text-primary italic">I replace chaos<br />with clockwork.</span>
             </h2>

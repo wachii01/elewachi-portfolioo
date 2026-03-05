@@ -60,7 +60,7 @@ const CVSection = () => {
         <section className="py-16 px-6 md:px-12 bg-transparent" id="cv">
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
+                    <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
                         Curriculum <span className="font-accent text-primary italic">Vitae</span>
                     </h2>
                     <p className="text-muted-foreground">AI Automation Expert | n8n Developer</p>

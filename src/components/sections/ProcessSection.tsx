@@ -8,7 +8,7 @@ const ProcessSection = () => {
         <div className="mb-6">
           <span className="text-muted-foreground text-sm tracking-widest uppercase">Why you need this</span>
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-16">
           Your Business Could Be Scaling Faster.<br />Here's What's Stopping You.
         </h2>
 

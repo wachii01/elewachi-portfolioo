@@ -2,7 +2,7 @@ const LetterSection = () => {
     return (
         <section className="py-16 px-6 md:px-12 bg-transparent" id="letter">
             <div className="max-w-2xl mx-auto">
-                <h2 className="text-5xl font-accent text-foreground mb-2">Letter</h2>
+                <h2 className="text-3xl font-accent text-foreground mb-2">Letter</h2>
                 <p className="text-muted-foreground mb-8 text-sm">To my next team and Employer</p>
                 <div className="glass rounded-[2rem] p-8 md:p-12 shadow-2xl relative">
                     <h3 className="text-2xl font-accent text-foreground mb-8">To My Next Team,</h3>

@@ -23,7 +23,7 @@ const ContactForm = () => {
           <div className="mb-6">
             <span className="text-muted-foreground text-sm tracking-widest uppercase">Get Started</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-6">
             Ready to reclaim<br />your <span className="text-primary italic">time?</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
