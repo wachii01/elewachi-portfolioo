@@ -96,27 +96,30 @@ const HeroSection = () => {
         </div>
 
         {/* Stats cards with L-shaped corners — 2x2 grid on mobile */}
-        <div className="w-full max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 border-t border-border pt-10 mb-20">
-          {[
-            { value: '20+', label: 'Hrs/week Saved' },
-            { value: '60+', label: 'Processes Automated' },
-            { value: '40%', label: 'Cost Reduction' },
-            { value: '500+', label: 'AI Interactions Monthly' },
-          ].map((stat, i) => (
-            <div key={i} className="relative p-6 flex flex-col items-center">
-              {/* Top-left L-corner */}
-              <span className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-primary/50" />
-              {/* Top-right L-corner */}
-              <span className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-primary/50" />
-              {/* Bottom-left L-corner */}
-              <span className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-primary/50" />
-              {/* Bottom-right L-corner */}
-              <span className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-primary/50" />
+        <div className="w-full max-w-4xl mx-auto border-t border-border pt-10 mb-20">
+          <span className="text-muted-foreground text-sm tracking-widest uppercase mb-6 block">Results that matter</span>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {[
+              { value: '20+', label: 'Hrs/week Saved' },
+              { value: '60+', label: 'Processes Automated' },
+              { value: '40%', label: 'Cost Reduction' },
+              { value: '500+', label: 'AI Interactions Monthly' },
+            ].map((stat, i) => (
+              <div key={i} className="relative p-6 flex flex-col items-center">
+                {/* Top-left L-corner */}
+                <span className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-primary/50" />
+                {/* Top-right L-corner */}
+                <span className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-primary/50" />
+                {/* Bottom-left L-corner */}
+                <span className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-primary/50" />
+                {/* Bottom-right L-corner */}
+                <span className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-primary/50" />
 
-              <span className="text-3xl md:text-4xl font-bold text-foreground mb-1">{stat.value}</span>
-              <span className="text-sm text-muted-foreground text-center">{stat.label}</span>
-            </div>
-          ))}
+                <span className="text-3xl md:text-4xl font-bold text-foreground mb-1">{stat.value}</span>
+                <span className="text-sm text-muted-foreground text-center">{stat.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>
