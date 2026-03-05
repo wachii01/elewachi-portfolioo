@@ -67,10 +67,20 @@
     line-height: 1.7;
     font-weight: 400;
     background-color: #0a0a0a;
+  }
+
+  /* Grid overlay — behind content (z-0), content is z-10 */
+  #root::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: #0a0a0a;
     background-image:
       linear-gradient(rgba(255, 107, 0, 0.12) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 107, 0, 0.12) 1px, transparent 1px);
     background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
   }
 
   ::selection {
