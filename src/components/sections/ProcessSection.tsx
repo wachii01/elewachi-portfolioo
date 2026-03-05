@@ -2,7 +2,7 @@ import { processSteps } from '@/data/portfolioData';
 
 const ProcessSection = () => {
   return (
-    <section className="py-16 px-6 md:px-12 bg-background" id="process">
+    <section className="py-16 px-6 md:px-12 bg-transparent" id="process">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="mb-6">

@@ -36,7 +36,7 @@ const tools = [
 
 const ToolsGridSection = () => {
     return (
-        <section className="py-16 px-6 md:px-12 bg-background" id="tools">
+        <section className="py-16 px-6 md:px-12 bg-transparent" id="tools">
             <div className="max-w-5xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
                     Tech Stack & Integrations

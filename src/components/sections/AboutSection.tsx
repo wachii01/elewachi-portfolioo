@@ -24,7 +24,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-12 bg-background" id="about">
+    <section className="py-16 px-6 md:px-12 bg-transparent" id="about">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left column */}

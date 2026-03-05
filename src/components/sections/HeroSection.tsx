@@ -31,7 +31,7 @@ const AnimatedHeroWord = () => {
 
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col justify-center items-start text-left px-6 md:px-12 pt-32 pb-0 overflow-hidden bg-background">
+    <section className="relative flex flex-col justify-center items-start text-left px-6 md:px-12 pt-32 pb-0 overflow-hidden bg-transparent">
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-start">
         {/* Profile picture — small, centered */}
         <div className="mb-10 relative fade-in-up">
@@ -59,32 +59,14 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-20 w-full sm:w-auto fade-in-up delay-300">
-          <a
-            href="#"
-            className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-[#e66000] hover:from-[#ff8533] hover:to-primary text-white font-medium flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(255,107,0,0.2)] hover:shadow-[0_0_30px_rgba(255,107,0,0.4)]"
-          >
-            View My Work
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-          </a>
-          <a
-            href="#"
-            className="w-full sm:w-auto px-8 py-4 bg-transparent border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white font-medium flex items-center justify-center gap-2 transition-all"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2" /><line x1="16" x2="16" y1="2" y2="6" /><line x1="8" x2="8" y1="2" y2="6" /><line x1="3" x2="21" y1="10" y2="10" /></svg>
-            Book a Call
-          </a>
-        </div>
-
         {/* Video Section */}
-        <div className="w-full flex flex-col items-start fade-in-up delay-400">
+        <div className="w-full flex flex-col items-start fade-in-up delay-300">
           <p className="font-['JetBrains_Mono'] text-sm sm:text-base text-gray-400 mb-8 max-w-lg text-left">
             Get to know me — watch a quick intro on who I am and what I do.
           </p>
 
           {/* YouTube Video embed */}
-          <div className="w-full max-w-3xl overflow-hidden border border-border shadow-2xl mb-20">
+          <div className="w-full max-w-3xl overflow-hidden border border-border shadow-2xl">
             <iframe
               src="https://www.youtube.com/embed/WWAV273LfO8"
               title="About Elewachi Emmanuel"
@@ -93,6 +75,24 @@ const HeroSection = () => {
               className="w-full aspect-video"
             />
           </div>
+        </div>
+
+        {/* Buttons — below video, always side by side */}
+        <div className="flex flex-row items-center gap-4 sm:gap-6 mt-8 mb-20 w-full sm:w-auto fade-in-up delay-400">
+          <a
+            href="#"
+            className="flex-1 sm:flex-none px-8 py-4 bg-gradient-to-r from-primary to-[#e66000] hover:from-[#ff8533] hover:to-primary text-white font-medium flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(255,107,0,0.2)] hover:shadow-[0_0_30px_rgba(255,107,0,0.4)]"
+          >
+            View My Work
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+          </a>
+          <a
+            href="#"
+            className="flex-1 sm:flex-none px-8 py-4 bg-transparent border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white font-medium flex items-center justify-center gap-2 transition-all"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2" /><line x1="16" x2="16" y1="2" y2="6" /><line x1="8" x2="8" y1="2" y2="6" /><line x1="3" x2="21" y1="10" y2="10" /></svg>
+            Book a Call
+          </a>
         </div>
 
         {/* Stats cards with L-shaped corners — 2x2 grid on mobile */}

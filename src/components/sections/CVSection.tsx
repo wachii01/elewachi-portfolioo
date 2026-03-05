@@ -57,7 +57,7 @@ const experiences = [
 
 const CVSection = () => {
     return (
-        <section className="py-16 px-6 md:px-12 bg-background" id="cv">
+        <section className="py-16 px-6 md:px-12 bg-transparent" id="cv">
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-2">

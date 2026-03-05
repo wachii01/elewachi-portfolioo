@@ -3,7 +3,7 @@ import { testimonials } from '@/data/portfolioData';
 
 const ReviewsSection = () => {
   return (
-    <section className="py-16 px-6 md:px-12 bg-background" id="testimonials">
+    <section className="py-16 px-6 md:px-12 bg-transparent" id="testimonials">
       <div className="max-w-6xl mx-auto">
         <div className="mb-6">
           <span className="text-muted-foreground text-sm tracking-widest uppercase">Testimonials</span>

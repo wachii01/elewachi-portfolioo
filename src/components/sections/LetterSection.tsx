@@ -1,6 +1,6 @@
 const LetterSection = () => {
     return (
-        <section className="py-16 px-6 md:px-12 bg-background" id="letter">
+        <section className="py-16 px-6 md:px-12 bg-transparent" id="letter">
             <div className="max-w-2xl mx-auto">
                 <h2 className="text-5xl font-accent text-foreground mb-2">Letter</h2>
                 <p className="text-muted-foreground mb-8 text-sm">To my next team and Employer</p>

@@ -66,24 +66,16 @@
     font-family: 'Outfit', sans-serif;
     line-height: 1.7;
     font-weight: 400;
+    background-color: #0a0a0a;
+    background-image:
+      linear-gradient(rgba(255, 107, 0, 0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 107, 0, 0.12) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
 
   ::selection {
     @apply bg-primary/30;
   }
-}
-
-/* Grid overlay — CSS pseudo-element, guaranteed to render above all content */
-#root::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 107, 0, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 107, 0, 0.12) 1px, transparent 1px);
-  background-size: 50px 50px;
-  pointer-events: none;
-  z-index: 9999;
 }
 
 /* Fade-in-up animation with delay variants */
