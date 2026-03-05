@@ -32,7 +32,7 @@ const AnimatedHeroWord = () => {
 const HeroSection = () => {
   return (
     <section className="relative flex flex-col justify-center items-start text-left px-6 md:px-12 pt-32 pb-0 overflow-hidden bg-background">
-      <div className="relative z-10 max-w-5xl flex flex-col items-start">
+      <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-start">
         {/* Profile picture — small, centered */}
         <div className="mb-10 relative fade-in-up">
           <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-border shadow-lg">
