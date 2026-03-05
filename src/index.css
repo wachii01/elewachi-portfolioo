@@ -62,8 +62,8 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Outfit', sans-serif;
+    @apply text-foreground antialiased;
+    font-family: 'JetBrains Mono', monospace;
     line-height: 1.7;
     font-weight: 400;
     background-color: #0a0a0a;
@@ -114,7 +114,7 @@
 
 @layer components {
   .font-accent {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Outfit', sans-serif;
   }
 
   h1,
@@ -123,7 +123,7 @@
   h4,
   h5,
   h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Outfit', sans-serif;
     @apply font-bold tracking-tight;
   }
 
