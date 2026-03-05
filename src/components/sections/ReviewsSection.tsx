@@ -17,7 +17,7 @@ const ReviewsSection = () => {
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
-              className="relative p-8 md:p-10 border border-primary/50 bg-[#1a1a1a]"
+              className="bg-card border border-border p-8 md:p-10 hover:border-border/80 transition-all duration-300"
             >
 
               <p className="text-foreground text-lg leading-relaxed mb-8 italic">
