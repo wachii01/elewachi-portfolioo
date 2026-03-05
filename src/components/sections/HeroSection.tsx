@@ -1,5 +1,39 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+
+const TypewriterEffect = ({ words, typingSpeed = 100, deletingSpeed = 50, pauseTime = 2000 }: { words: string[], typingSpeed?: number, deletingSpeed?: number, pauseTime?: number }) => {
+  const [text, setText] = useState('');
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentWord = words[wordIndex];
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        setText(currentWord.substring(0, text.length + 1));
+        if (text === currentWord) {
+          setTimeout(() => setIsDeleting(true), pauseTime);
+        }
+      } else {
+        setText(currentWord.substring(0, text.length - 1));
+        if (text === '') {
+          setIsDeleting(false);
+          setWordIndex((prev) => (prev + 1) % words.length);
+        }
+      }
+    }, isDeleting && text === currentWord ? pauseTime : isDeleting ? deletingSpeed : typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, wordIndex, words, typingSpeed, deletingSpeed, pauseTime]);
+
+  return (
+    <span className="text-primary italic inline-flex flex-row items-center">
+      {text}
+      <span className="animate-pulse ml-0.5 inline-block w-0.5 h-[1.1em] bg-primary align-middle"></span>
+    </span>
+  );
+};
 import profilePicture from '@/assets/profile-picture.jpg';
 
 const AnimatedHeroWord = () => {
@@ -33,15 +67,11 @@ const HeroSection = () => {
   return (
     <section className="relative flex flex-col justify-center items-start text-left px-6 md:px-12 pt-32 pb-0 overflow-hidden bg-transparent">
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-start">
-        {/* Profile picture — small, centered */}
-        <div className="mb-10 relative fade-in-up">
-          <div className="w-32 h-32 overflow-hidden border-2 border-border shadow-lg">
-            <img
-              src={profilePicture}
-              alt="Elewachi Emmanuel"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
+        {/* Name and Title Line */}
+        <div className="mb-10 relative fade-in-up flex items-center gap-2">
+          <span className="font-['Syne'] font-bold text-xl tracking-wider uppercase text-foreground">
+            Elewachi<span className="text-muted-foreground font-normal mx-3">|</span>AI Automation <TypewriterEffect words={['Engineer', 'Consultant']} />
+          </span>
         </div>
 
         {/* Main Heading */}
