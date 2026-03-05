@@ -68,9 +68,9 @@ const HeroSection = () => {
     <section className="relative flex flex-col justify-center items-start text-left px-6 md:px-12 pt-32 pb-0 overflow-hidden bg-transparent">
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-start">
         {/* Name and Title Line */}
-        <div className="mb-10 relative fade-in-up flex items-center gap-2">
-          <span className="font-['Syne'] font-bold text-xl tracking-wider uppercase text-foreground">
-            Elewachi<span className="text-muted-foreground font-normal mx-3">|</span>AI Automation <TypewriterEffect words={['Engineer', 'Consultant']} />
+        <div className="mb-10 relative fade-in-up flex items-center gap-1 sm:gap-2">
+          <span className="font-['Syne'] font-bold text-[11px] sm:text-xs md:text-sm lg:text-base tracking-widest uppercase text-foreground whitespace-nowrap">
+            Elewachi<span className="text-muted-foreground font-normal mx-1.5 sm:mx-3">|</span>AI Automation <TypewriterEffect words={['Engineer', 'Consultant']} />
           </span>
         </div>
 
