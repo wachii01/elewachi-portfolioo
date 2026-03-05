@@ -34,7 +34,7 @@ const HeroSection = () => {
     <section className="relative flex flex-col justify-center items-center text-center px-6 md:px-12 pt-32 pb-0 overflow-hidden bg-background">
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
         {/* Profile picture — small, centered */}
-        <div className="mb-10 relative">
+        <div className="mb-10 relative fade-in-up">
           <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-border shadow-lg">
             <img
               src={profilePicture}
@@ -45,27 +45,27 @@ const HeroSection = () => {
         </div>
 
         {/* Main Heading — large serif with animated cycling word */}
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 fade-in-up delay-100">
           I <AnimatedHeroWord /> AI systems that
           generate more revenue while
           replacing the tasks <span className="text-primary italic">that slow you down.</span>
         </h1>
 
         {/* Subtitle */}
-        <div className="max-w-2xl mx-auto mb-6">
-          <p className="text-muted-foreground text-lg md:text-xl leading-relaxed italic">
+        <div className="max-w-2xl mx-auto mb-6 fade-in-up delay-200">
+          <p className="text-muted-foreground text-lg md:text-xl leading-relaxed italic font-mono">
             You can't scale a business that still runs on manual follow-ups, disconnected tools, and processes that break the moment your team gets busy.
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto mb-12">
+        <div className="max-w-2xl mx-auto mb-12 fade-in-up delay-300">
           <p className="text-foreground text-lg md:text-xl leading-relaxed font-medium italic">
             Get to know me — watch a quick intro on who I am and what I do.
           </p>
         </div>
 
         {/* YouTube Video embed */}
-        <div className="w-full max-w-3xl mx-auto mb-20 rounded-lg overflow-hidden border border-border shadow-2xl">
+        <div className="w-full max-w-3xl mx-auto mb-20 rounded-lg overflow-hidden border border-border shadow-2xl fade-in-up delay-400">
           <iframe
             src="https://www.youtube.com/embed/WWAV273LfO8"
             title="About Elewachi Emmanuel"
