@@ -35,7 +35,7 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-start">
         {/* Profile picture — small, centered */}
         <div className="mb-10 relative fade-in-up">
-          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-border shadow-lg">
+          <div className="w-32 h-32 overflow-hidden border-2 border-border shadow-lg">
             <img
               src={profilePicture}
               alt="Elewachi Emmanuel"

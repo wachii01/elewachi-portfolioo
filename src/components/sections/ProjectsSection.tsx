@@ -32,16 +32,16 @@ const ProjectsSection = ({ limit, isSimpleView }: ProjectsSectionProps) => {
             <Dialog key={idx}>
               <DialogTrigger asChild>
                 <button className="text-left w-full group">
-                  <div className="bg-[#1a0808] hover:bg-[#250c0c] border border-[#2a1010] rounded-2xl p-8 md:p-10 transition-all duration-300 h-full flex flex-col">
+                  <div className="bg-[#1a1a1a] hover:bg-[#222222] border border-[#2a2a2a] p-8 md:p-10 transition-all duration-300 h-full flex flex-col">
                     <span className="text-muted-foreground text-xs tracking-widest uppercase mb-4">{project.category}</span>
-                    <h3 className="text-2xl md:text-3xl font-bold text-primary mb-3 italic">{project.title}</h3>
-                    <p className="text-primary/80 text-sm md:text-base mb-8 italic leading-relaxed">{project.description}</p>
+                    <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">{project.title}</h3>
+                    <p className="text-gray-400 text-sm md:text-base mb-8 leading-relaxed">{project.description}</p>
 
                     <div className="mt-auto space-y-3">
                       {project.solution.slice(0, 2).map((item, i) => (
                         <div key={i} className="flex items-start gap-3">
                           <span className="text-primary mt-0.5 text-lg">⌘</span>
-                          <span className="text-primary/70 text-sm">{item}</span>
+                          <span className="text-gray-300 text-sm">{item}</span>
                         </div>
                       ))}
                     </div>
