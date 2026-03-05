@@ -44,35 +44,55 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Main Heading — large serif with animated cycling word */}
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 fade-in-up delay-100">
+        {/* Main Heading */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1] mb-8 fade-in-up delay-100">
           I <AnimatedHeroWord /> AI systems that
-          generate more revenue while
-          replacing the tasks <span className="text-primary italic">that slow you down.</span>
+          generate<br className="hidden md:block" />
+          more revenue while replacing the<br className="hidden md:block" />
+          tasks <span className="text-primary italic">that slow you down.</span>
         </h1>
 
         {/* Subtitle */}
-        <div className="max-w-2xl mx-auto mb-6 fade-in-up delay-200">
-          <p className="text-muted-foreground text-lg md:text-xl leading-relaxed italic font-mono">
+        <div className="max-w-2xl mx-auto mb-12 fade-in-up delay-200">
+          <p className="font-mono text-sm sm:text-base text-gray-400 leading-relaxed">
             You can't scale a business that still runs on manual follow-ups, disconnected tools, and processes that break the moment your team gets busy.
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto mb-12 fade-in-up delay-300">
-          <p className="text-foreground text-lg md:text-xl leading-relaxed font-medium italic">
-            Get to know me — watch a quick intro on who I am and what I do.
-          </p>
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-20 w-full sm:w-auto fade-in-up delay-300">
+          <a
+            href="#"
+            className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-[#e66000] hover:from-[#ff8533] hover:to-primary text-white font-medium flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(255,107,0,0.2)] hover:shadow-[0_0_30px_rgba(255,107,0,0.4)] rounded-md"
+          >
+            View My Work
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+          </a>
+          <a
+            href="#"
+            className="w-full sm:w-auto px-8 py-4 bg-transparent border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white font-medium flex items-center justify-center gap-2 transition-all rounded-md"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2" /><line x1="16" x2="16" y1="2" y2="6" /><line x1="8" x2="8" y1="2" y2="6" /><line x1="3" x2="21" y1="10" y2="10" /></svg>
+            Book a Call
+          </a>
         </div>
 
-        {/* YouTube Video embed */}
-        <div className="w-full max-w-3xl mx-auto mb-20 rounded-lg overflow-hidden border border-border shadow-2xl fade-in-up delay-400">
-          <iframe
-            src="https://www.youtube.com/embed/WWAV273LfO8"
-            title="About Elewachi Emmanuel"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full aspect-video"
-          />
+        {/* Video Section */}
+        <div className="w-full flex flex-col items-start fade-in-up delay-400">
+          <p className="font-mono text-sm sm:text-base text-gray-400 mb-8 max-w-lg text-left">
+            Get to know me — watch a quick intro on who I am and what I do.
+          </p>
+
+          {/* YouTube Video embed */}
+          <div className="w-full max-w-3xl rounded-xl overflow-hidden border border-border shadow-2xl mb-20">
+            <iframe
+              src="https://www.youtube.com/embed/WWAV273LfO8"
+              title="About Elewachi Emmanuel"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full aspect-video"
+            />
+          </div>
         </div>
 
         {/* Stats cards with L-shaped corners — 2x2 grid on mobile */}
